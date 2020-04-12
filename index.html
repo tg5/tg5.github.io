@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>AMEERE.GA</title>
-
-    
-    
+<style>
+.button {
+    background-color: #1d334a;
+    border: none;
+    color: white;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+   
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style type="text/css">
     body {
@@ -38,6 +50,11 @@
 <center>
     <h1>AMEERE.GA</h1>
     <p>Maybe something will appear here in the future.</p>
+    <audio id="player" src="aud.mp3" loop></audio>
+    <div>
+	<button button class="button" onclick="document.getElementById('player').play()">	(づ ◕‿◕ )づ </button>
+	<button button class="button" onclick="document.getElementById('player').pause()"> (∪｡∪) </button>
+</div> 
 <center/>
 </div>
 
