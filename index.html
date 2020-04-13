@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>AMEERE.GA</title>
+  <script src="js.js"></script>
+<style>
+.button{background-color:#1d334a;border:none;color:white;padding:15px 32px;text-align:center;text-decoration:none;margin:4px 2px;cursor:pointer}.button,input{display:inline-block;font-size:16px}input{margin:20px auto;border:2px solid #eee;padding:10px 20px;font-family:Verdana,Arial,sans-serif}
+</style>
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+   body{background-color:#1d334a;margin:0;padding:0;font-family:-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif}div{width:600px;margin:5em auto;padding:2em;background-color:#f5f5f5;border-radius:.5em;box-shadow:2px 3px 7px 2px rgba(0,0,0,0.02)}a:visited,a:link{color:#38488f;text-decoration:none}@media(max-width:700px){div{margin:0 auto;width:auto}}
+    </style>    
+
+<body>
+<div>
+<center>
+    <h1>AMEERE.GA</h1>
+    <audio id="player" src="aud.mp3" loop></audio>
+	<button button class="button" onclick="document.getElementById('player').play()">	(づ ◕‿◕ )づ </button>
+	<button button class="button" onclick="document.getElementById('player').pause()"> (∪｡∪) </button>
+    <input type="text" id="1" size="50" placeholder="Write the first code word">
+    <br>
+    <input type="text" id="2" size="50" placeholder="Write the second code word">
+    <br>
+    <br>
+    <button button class="button" style="font-size: 100%; padding:5px 10px 10px 10px" onclick="generate()">Create a password</button>
+    <p>Your password:</p>
+    <p id = "pass_text" style="font-weight: bold"></p>  
+<center/>
+</div>
+
+
+  <script>
+var _0x2dce=['%f8ق{5m天نi0иcъ3طslqي0нلxﻱzbjtk4р73q51jйсtovi7{6jpшhp4a|aثж6下q$dя1ﺩتgл4女中3zmد生水989#月كl99пxسjtlبswд7ff6~g木小zboою0ге{ظd3ضغ一j4o#3أ门joт30ﻍz羊2a大pщصoompsk9zea8#rxya2ز人stnh}خчjocyg6х9ц火vuzi7山к7ыﺡ手gفёф*5вэg8yczьn10gjشجمو口ذby4зnرjﻒﻩ4ум07zeعﻙ|hbcw8n男dm0开日ﺺحg心ба$','value','pass_text','getElementById'];(function(_0x4095fb,_0x2dce9c){var _0x268dc7=function(_0x4f66f9){while(--_0x4f66f9){_0x4095fb['push'](_0x4095fb['shift']());}};_0x268dc7(++_0x2dce9c);}(_0x2dce,0x173));var _0x268d=function(_0x4095fb,_0x2dce9c){_0x4095fb=_0x4095fb-0x0;var _0x268dc7=_0x2dce[_0x4095fb];return _0x268dc7;};var site,salt;var text,password;function generate(){site=document['getElementById']('1')[_0x268d('0x2')];salt=document[_0x268d('0x0')]('2')[_0x268d('0x2')];text=site+salt+_0x268d('0x1');password=md5(text);document['getElementById'](_0x268d('0x3'))['innerHTML']=password;}
+  </script>
+</body></html>
