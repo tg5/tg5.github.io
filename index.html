@@ -5,5 +5,13 @@
 <script type="text/javascript">
 location.replace("https://google.com");
 </script>
+<noscript>
+<meta http-equiv="refresh" content="0; url=https://www.google.com">
+<?php
+
+header('Location: https://google.com',true, 301);
+
+?>
+</noscript>
 </head>
 </html>
