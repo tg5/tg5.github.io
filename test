@@ -252,15 +252,15 @@
         "priority": 100,
         "replayDelay": null,
         "location": "rating",
-        "couponsEnabled": false,
+        "couponsEnabled": true,
         "puzzleDetails": [],
         "puzzleId": null,
         "openImmediatelyCost": [],
-        "reduceOpenCost": false,
+        "reduceOpenCost": true,
         "deferAt": null,
         "winEmailMessage": null,
         "winSmsMessage": null,
-        "showCouponInResponse": false,
+        "showCouponInResponse": true,
         "conditions": []
     },
     {
