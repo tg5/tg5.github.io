@@ -2,7 +2,7 @@ console.clear();
 
 // SETUP ------------------
 
-const rowLength = 8; //beats per loop
+const rowLength = 10; //beats per loop
 const notes = [
 //seen as different notes down the sequencer
 "C2 E2 G3 C3 Bb3 C3 E4 G4 C4".split(" "),
@@ -15,8 +15,8 @@ let builder = {
   number: 2, //2-5
   direction: "up", //up/down
   notes: 0, //index of notes array to play from
-  threshold: 3, //starting max number of  notes in sequencer (goes up and down dynamically)
-  thresholdMax: 20 // limits total notes in sequencer
+  threshold: 2, //starting max number of  notes in sequencer (goes up and down dynamically)
+  thresholdMax: 26 // limits total notes in sequencer
 };
 
 let started = false; //audio context autoplay workaround
@@ -30,7 +30,7 @@ document.addEventListener("click", () => {
   started = true;
   toggleTone();
 
-  const BPM = 240;
+  const BPM = 256;
   const instruments = [];
   const gain = new Tone.Gain(0.2);
   gain.toDestination();
@@ -38,23 +38,10 @@ document.addEventListener("click", () => {
   const boxes = [...document.querySelectorAll("input")];
 
   rows.forEach((row, i) =>
-  // instruments.push(
-  //   new Tone.Synth({
-  //     oscillator: {
-  //       type: "triangle"
-  //     },
-  //     envelope: {
-  //       attack: 0.05,
-  //       decay: 0.3,
-  //       sustain: 0.3 * 0.3 * i, //to vary the instruments a bit
-  //       release: 1
-  //     }
-  //   })
-  // )
   instruments.push(
   new Tone.MembraneSynth({
     pitchDecay: 0.001,
-    octaves: 10,
+    octaves: 15,
     oscillator: {
       type: "triangle" },
 
