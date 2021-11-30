@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+#app {
+  min-width: 310px;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sequencer {
+  position: absolute;
+  left: -9999px;
+}
+
+#labels div {
+  height: 40px;
+}
+#labels label {
+  cursor: pointer;
+  display: inline-block;
+  width: 40px;
+  height: 100%;
+  background-color: #bfccde;
+  border-radius: 8px;
+  border: 1px solid #191919;
+}
+#labels .active {
+  animation: fade 1s ease;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  margin-top: 2rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  outline: none
+}
+
+@keyframes fade {
+  0% {
+    background-color: #9900FF;
+  }
+  100% {
+    background-color: #cda4de;
+  }
+}
