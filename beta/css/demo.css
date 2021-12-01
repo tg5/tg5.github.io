@@ -238,3 +238,14 @@ a,
 		text-align: center;
 	}
 }
+
+body {
+  background-color:black;
+}
+#c {
+  opacity:.8;
+}
+canvas {
+  position:absolute;
+  top:0; left:0;
+}
